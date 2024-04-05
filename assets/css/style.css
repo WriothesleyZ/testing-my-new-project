@@ -1,0 +1,55 @@
+
+.btn-classic {
+    margin: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: 2s;
+}
+
+.block {
+    width: 120px;
+    height: 120px;
+    background: black;
+}
+@media (hover: hover) {
+    .btn-classic:hover {
+        font-size: 24px;
+        animation: Block 1s;
+    }
+    
+}
+
+@media (hover: none) {
+    .btn-classic:active {
+        font-size: 24px;
+    }
+}
+
+@keyframes Block { 
+    0% {
+        rotate: 50deg;
+    }
+
+    50% {
+        rotate: 10deg;
+    }
+
+    100% {
+        rotate: 360deg;
+    }
+}
+/* Адаптация для Galaxy fold */
+@media (min-width: 290px) {
+    .btn-classic {
+        padding: 100px;
+    }
+}
+
+/* Адаптация для Galaxy fold */
+@media (max-width: 290px) {
+    .btn-classic {
+        padding: 30px;
+    }
+}
